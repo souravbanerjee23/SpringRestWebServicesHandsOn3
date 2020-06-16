@@ -51,23 +51,23 @@
 
 
 
-	<bean id="dept0" class="com.cognizant.springlearn.model.Department"
-		scope="prototype">
-		<property name="id" value="100" />
-		<property name="name" value="IT" />
-		<property name="location" value="Chandannagar" />
-	</bean>
 	<bean id="dept1" class="com.cognizant.springlearn.model.Department"
 		scope="prototype">
-		<property name="id" value="101" />
-		<property name="name" value="IT" />
-		<property name="location" value="Konnogar" />
+		<property name="id" value="500" />
+		<property name="name" value="FSE" />
+		<property name="location" value="Chandannagar" />
+	</bean>
+	<bean id="dept2" class="com.cognizant.springlearn.model.Department"
+		scope="prototype">
+		<property name="id" value="501" />
+		<property name="name" value="FSE" />
+		<property name="location" value="Konnagar" />
 	</bean>
 	<bean id="departmentList" class="java.util.ArrayList">
 		<constructor-arg>
 			<list>
-				<ref bean="dept0"></ref>
 				<ref bean="dept1"></ref>
+				<ref bean="dept2"></ref>
 			</list>
 		</constructor-arg>
 	</bean>
